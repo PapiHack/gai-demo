@@ -1,0 +1,31 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Salary Prediction </title>
+        <link  rel="stylesheet" type="text/css">
+        <link  rel="stylesheet" type="text/css">
+        <link  rel="stylesheet" type="text/css"> 
+
+        <link  rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="login">
+           <h2> Predict Salary Analysis </h2>
+
+           <form action="{{ url_for("predict") }}" method="post">
+                <input type="text" name="experience" placeholder="Expreience" required="requierd" />
+                <input type="text" name="test_score" placeholder="Test Score" required="requierd" />
+                <input type="text" name="interview_score" placeholder="Interview Score" required="requierd" />
+
+                <button type="submit">Predict</buttom>
+           </form>
+
+        </div>
+        <br>
+        {{ prediction_text }}
+
+    </body>
+
+</html>

@@ -1,0 +1,8 @@
+venv
+env
+__pycache__
+*$py.class
+README.md
+Dockerfile
+k8s
+.gitignore

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wimlds-demo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      model: salary-prediction
+  template:
+    metadata:
+      labels:
+        model: salary-prediction
+    spec:
+      containers:
+      - name: wimlds-demo-model
+        image: papihack/wimlds-demo-model
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
