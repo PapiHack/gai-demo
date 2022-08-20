@@ -8,7 +8,7 @@
 ![PR](https://img.shields.io/github/issues-pr/PapiHack/wimlds-demo?style=for-the-badge&logo=appveyor)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Demo project of my talk for Women In Machine Learning & Data Science (WIMLDS) Dakar community on `How to Deploy and Scale AI (ML or DL) Models with Kubernetes`.  
+Demo project of my talk for Galsen AI Dakar community on `How to Deploy and Scale AI (ML or DL) Models with Kubernetes`.  
 
 You can find the slides of my talk at <https://meissa-wimlds-presentation.netlify.app>.
 
@@ -107,8 +107,8 @@ The url should look like at something like : `http://node-ip:svc-port` for the w
         <th>Web interface</th>
     </tr>
     <tr>
-        <td><img src="./screenshots/wimlds-demo.png"/></td>
-        <td><img src="./screenshots/wimlds-demo-web.png"/></td>
+        <td><img src="./screenshots/gai-demo.png"/></td>
+        <td><img src="./screenshots/gai-demo-web.png"/></td>
     </tr>
 </table>
 
