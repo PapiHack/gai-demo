@@ -1,4 +1,4 @@
-# 🚀 GAI Demo Project 🚀
+# 🚀 GalsenAI Demo Project 🚀
 
 [![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 [![docker](https://img.shields.io/badge/docker-3776AB?style=for-the-badge&logo=docker&logoColor=white)](https://img.shields.io/badge/docker-3776AB?style=for-the-badge&logo=docker&logoColor=white)
@@ -8,7 +8,7 @@
 ![PR](https://img.shields.io/github/issues-pr/PapiHack/gai-demo?style=for-the-badge&logo=appveyor)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Demo project of my talk for Galsen AI Dakar community on `How to Deploy and Scale AI (ML or DL) Models with Kubernetes`.  
+Demo project of my talk for GalsenAI Dakar community on `How to Deploy and Scale AI (ML or DL) Models with Kubernetes`.  
 
 You can find the slides of my talk at <https://meissa-gai-presentation.netlify.app>.
 
@@ -64,13 +64,13 @@ If you have `Docker` on your system, you have two options after placing yourself
 
     - Run it with the following command :
 
-            docker run -d --name salary-prediction-model -p 5000:5000 salary-prediction-service
+            docker run -d --name salary-prediction-service -p 5000:5000 salary-prediction-service
 
 - Second option :
 
     - Run the image that i already deploy on `docker hub` with the following command :
 
-            docker run -d --name salary-prediction-model -p 5000:5000 papihack/wimlds-demo-model
+            docker run -d --name salary-prediction-model -p 5000:5000 papihack/galsenai-salary-prediction
     
 
 ### Kubernetes
