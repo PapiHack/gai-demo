@@ -4,13 +4,13 @@ import sklearn
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open('model.pkl', 'rb'))
 
-@app.route("/")
+@app.route('/')
 def Home():
-    return render_template("index.html")
+    return render_template('index.html')
 
-@app.route("/predict", methods=["POST"])
+@app.route('/predict', methods=['POST'])
 def predict():
 
     int_feature = [int(x) for x in request.form.values()]
@@ -19,9 +19,9 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template("index.html", prediction_text = "Enploye salary sould be $ {}".format(output))
+    return render_template('index.html', prediction_text='Enploye salary sould be $ {}'.format(output))
 
-@app.route("/api/predict", methods=["POST"])
+@app.route('/api/predict', methods=['POST'])
 def api_predict():
 
     data = request.get_json(force=True)
@@ -30,9 +30,9 @@ def api_predict():
 
     output = round(prediction[0], 2)
 
-    return jsonify({"salary": output, "currency": "$"})
+    return jsonify({'salary': output, 'currency': '$'})
 
 
-if __name__=="__main__":
+if __name__== '__main__':
     app.run(host="0.0.0.0", debug=True)
 

@@ -3,15 +3,16 @@ import numpy as np
 #import matplotlib.pyplot as plt
 #import seaborn as sns
 import pickle
+from sklearn.linear_model import LinearRegression
 
-data = pd.read_csv("salary.csv")
+data = pd.read_csv('salary.csv')
 
 data['experience'].fillna(0, inplace=True)
 
 data['test_score'].fillna(data['test_score'].mean(), inplace=True)
 data['interview_score'].fillna(data['interview_score'].mean(), inplace=True)
 
-X=data.iloc[:,:3]
+X = data.iloc[:, :3]
 
 # Converting the categorical feature to number 
 def convert_into_int(word):
@@ -22,13 +23,11 @@ def convert_into_int(word):
 
 X['experience'] = X['experience'].apply(lambda x: convert_into_int(x))
 
-y=data.iloc[:, -1]
+y = data.iloc[:, -1]
 
-
-from sklearn.linear_model import LinearRegression
 lr = LinearRegression()
 lr.fit(X,y)
 
-# Seving the model 
+# Serving the model 
 
-pickle.dump(lr, open("model.pkl", "wb"))    
+pickle.dump(lr, open('model.pkl', 'wb'))    
