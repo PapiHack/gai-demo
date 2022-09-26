@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wimlds-demo-service
+  name: galsenai-demo-service
 spec:
   selector:
     model: salary-prediction
   type: NodePort
   ports:
   - port: 5000
-    targetPort: 5000
+    targetPort: http
