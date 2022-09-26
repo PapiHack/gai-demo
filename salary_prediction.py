@@ -1,14 +1,10 @@
 import pandas as pd
-import numpy as np
-#import matplotlib.pyplot as plt
-#import seaborn as sns
 import pickle
 from sklearn.linear_model import LinearRegression
 
 data = pd.read_csv('salary.csv')
 
 data['experience'].fillna(0, inplace=True)
-
 data['test_score'].fillna(data['test_score'].mean(), inplace=True)
 data['interview_score'].fillna(data['interview_score'].mean(), inplace=True)
 

@@ -1,6 +1,5 @@
 import numpy as np
 from flask import Flask, request, render_template, jsonify
-import sklearn
 import pickle
 
 app = Flask(__name__)

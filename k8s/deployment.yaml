@@ -13,12 +13,12 @@ spec:
         model: salary-prediction
     spec:
       containers:
-      - name: galsenai-salary-prediction
-        image: papihack/galsenai-salary-prediction
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 5000
-          name: http
+        - name: galsenai-salary-prediction
+          image: papihack/galsenai-salary-prediction
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 5000
+              name: http

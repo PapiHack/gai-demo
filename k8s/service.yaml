@@ -7,5 +7,5 @@ spec:
     model: salary-prediction
   type: NodePort
   ports:
-  - port: 5000
-    targetPort: http
+    - port: 5000
+      targetPort: http
