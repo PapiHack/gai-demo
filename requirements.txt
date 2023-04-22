@@ -1,5 +1,5 @@
 wheel
-certifi==2021.5.30
+certifi==2022.12.7
 click==8.0.1
 colorama==0.4.4
 Flask==2.0.1
